@@ -6,7 +6,7 @@ export enum Attribute {
     'gender' = 'gender',
     'area' = 'area',
     'position' = 'position',
-    'timeInCompany' = 'timeInCompany',
+    'timeincompany' = 'timeincompany',
     'experience' = 'experience'
 }
 
@@ -18,7 +18,7 @@ class Worker extends HTMLElement {
     gender?: string;
     area?: string;
     position?: string;
-    timeInCompany?: number;
+    timeincompany?: number;
     experience?: number;
     
     constructor(){
@@ -40,8 +40,8 @@ class Worker extends HTMLElement {
                 this.age = newValue ? Number(newValue) : undefined;
                 break;
 
-            case Attribute.timeInCompany:
-                this.timeInCompany = newValue ? Number(newValue) : undefined;
+            case Attribute.timeincompany:
+                this.timeincompany = newValue ? Number(newValue) : undefined;
                 break;
 
             case Attribute.experience:
@@ -69,7 +69,7 @@ class Worker extends HTMLElement {
             <p>Gender: ${this.gender || 'No Gender'}</p>
             <p>Area: ${this.area || 'No Area'}</p>
             <p>Position: ${this.position || 'No Position'}</p>
-            <p>Time in Company: ${this.timeInCompany || 'No Time in Company'}</p>
+            <p>Time in Company: ${this.timeincompany || 'No Time in Company'}</p>
             <p>Experience: ${this.experience || 'No Experience'}</p>
             </section>
             `

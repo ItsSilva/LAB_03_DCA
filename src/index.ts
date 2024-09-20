@@ -20,7 +20,7 @@ class AppContainer extends HTMLElement {
             workerElement.setAttribute(Attribute.gender, worker.gender);
             workerElement.setAttribute(Attribute.area, worker.jobDetails.area);
             workerElement.setAttribute(Attribute.position, worker.jobDetails.position);
-            workerElement.setAttribute(Attribute.timeInCompany, String(worker.jobDetails.timeInCompany));
+            workerElement.setAttribute(Attribute.timeincompany, String(worker.jobDetails.timeInCompany));
             workerElement.setAttribute(Attribute.experience, String(worker.jobDetails.experience));
             
             this.workers.push(workerElement);
